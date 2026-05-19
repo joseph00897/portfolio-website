@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #f5f7fa, #c3cfe2);
+  color: #222;
+}
+
+/* Skip Link */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+}
+
+.skip-link:focus {
+  left: 10px;
+  top: 10px;
+  background: #000;
+  color: white;
+  padding: 10px;
+  z-index: 1000;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  color: white;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background: rgba(255,255,255,0.2);
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: white;
+  color: #0077ff;
+}
+
+nav a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 3px solid #000;
+  outline-offset: 3px;
+}
+
+/* Main Content */
+main {
+  padding: 40px;
+}
+
+/* Sections */
+section {
+  background: white;
+  margin-bottom: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Headings */
+h2 {
+  color: #0077ff;
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+h3 {
+  color: #ff4b5c;
+  margin-bottom: 10px;
+}
+
+/* Articles */
+article {
+  margin-top: 20px;
+  padding: 20px;
+  border-left: 5px solid #0077ff;
+  background: #f8f9ff;
+  border-radius: 10px;
+}
+
+/* Paragraphs */
+p {
+  margin-top: 10px;
+  font-size: 1.05rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0077ff;
+}
+
+/* Button */
+button {
+  background: linear-gradient(to right, #0077ff, #00c6ff);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #111;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+}
