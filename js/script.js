@@ -1,1 +1,5 @@
-console.log("Portfolio Website Loaded Successfully");
+function toggleTheme() {
+
+  document.body.classList.toggle("dark-mode");
+
+}
